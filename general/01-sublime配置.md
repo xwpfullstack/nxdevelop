@@ -304,7 +304,7 @@ Exec=bash -c 'LD_PRELOAD=/usr/lib/libsublime-imfix.so /opt/sublime_text/sublime_
 
 编辑->虚拟网络编辑器 -> 查看VMnet8的设置 -> 查看设置，记录网关和ip范围
 
-![vmnet8设置](../media/vmnet.png)
+![vmnet8设置](https://raw.githubusercontent.com/xwpfullstack/nxdevelop/master/media/vmnat.png)
 
 在ubuntu14.04里编辑
 
