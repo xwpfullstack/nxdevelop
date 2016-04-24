@@ -334,6 +334,6 @@ ctrl+shift+p  ->  install  -> 回车 -> sftp  ->回车
 
 windows下使用xshell远程连接
 
-+ author:xwp
++ author:jackxing
 + Email:xwp_fullstack@163.com
 + qq:1722379944
