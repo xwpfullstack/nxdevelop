@@ -11,3 +11,27 @@
 5.在Xcode中,选择Product/Scheme/Edit Scheme 选择编译模式,debug和release,选择release;
 
 6.点击run,打包到手机上,生成release版本的app;
+
+
+## ios发布账号
+
+### 邓白氏编码
+
+水木品格科技（北京）有限公司
+
+Shuimupinge Technology (Beijing) Co., Ltd.
+
+北京海淀区清华同方科技广场D座东楼503
+
+Room 503, East Building, Block D, Tsinghua Tongfang Technology Plaza,Haidian District, Beijing
+
+申请邮箱:xwp_fullstack@163.com
+D-U-N-S Number: 544392010
+
+### APPdevID
+
+APPdevID:xwp_fullstack@163.com
+
+passwd:问jack
+
+
