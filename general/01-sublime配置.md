@@ -128,6 +128,11 @@ Sublime版的在当前文件夹内打开
 ### Side​Bar​Enhancements
 右键一下子多处很多选择
 
+### Table Editor
+通过Ctrl+Shift+P->Table Editor: Enable for current view开启。
+先输入标题行，回车后在第二行输入|-后，按tab键就将进入Table编辑模式。
+表格必须与前面输入的文字之间有空行，否则表格会被当成普通文字渲染。
+
 ### 自带技巧
 
 + 修改同一个变量,光标放在变量后，两次    `ctrl+d` 
