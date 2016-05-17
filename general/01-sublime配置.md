@@ -133,6 +133,21 @@ Sublime版的在当前文件夹内打开
 先输入标题行，回车后在第二行输入|-后，按tab键就将进入Table编辑模式。
 表格必须与前面输入的文字之间有空行，否则表格会被当成普通文字渲染。
 
+
+### SublimeTmpl模板
+
+SublimeTmpl能新建html、css、javascript、php、python、ruby六种类型的文件模板，所有的文件模板都在插件目录的templates文件夹里，可以自定义编辑文件模板。
+SublimeTmpl默认的快捷键:
+
+    ctrl+alt+h html
+    ctrl+alt+j javascript
+    ctrl+alt+c css
+    ctrl+alt+p php
+    ctrl+alt+r ruby
+    ctrl+alt+shift+p python
+
+如果想要新建其他类型的文件模板的话，先自定义文件模板方在templates文件夹里，再分别打开Default (Windows).sublime-keymap、Default.sublime-commands、Main.sublime-menu、SublimeTmpl.sublime-settings这四个文件照着里面的格式自定义想要新建的类型，这里就详细介绍了，请各位自己折腾哈~
+
 ### 自带技巧
 
 + 修改同一个变量,光标放在变量后，两次    `ctrl+d` 
