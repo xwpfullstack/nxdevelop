@@ -34,4 +34,20 @@ APPdevID:xwp_fullstack@163.com
 
 passwd:问jack
 
+### itunes Connect上app展示图片尺寸
+
+网址：
+
+    https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/
+
+切图尺寸：
+
+    4.7寸   750x1334
+    5.5寸   1242x2208
+    4寸     640x1136
+    3.5寸   640x960
+
+ipad暂时不用上传
+
+
 
