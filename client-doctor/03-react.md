@@ -1,5 +1,63 @@
 #React学习
 
+## react点滴
+
+## 1. [编程规范](https://github.com/airbnb/javascript/blob/master/react/README.md) 
+## 2. reaction 运行流程
+* 准备
+    * npm3.3.12
+    * babel相关 v6.1.4
+        1. [Babel-现在开始使用 ES6](http://www.cnblogs.com/whitewolf/p/4357916.html)
+    * browsersync
+    * [下载react](http://facebook.github.io/react/downloads.html)，将六个js文件放到build文件夹中
+    * [react的补充工具](https://github.com/facebook/react/wiki/Complementary-Tools)
+```shell
+     # 安装npm
+     npm install -g babel-cli
+     npm install -g browserify
+     npm install -g babelify babel-preset-react babel-preset-es2015
+     # babel编译
+     babel --presets es2015,react src/main.js -o lib/main.js
+     babel --presets es2015,react src/ -d lib/
+     # 安装browsersync
+     sudo npm install -g browser-sync
+     # browser-sync运行
+     browser-sync start --server --files "*.*"
+```
+* 测试（[官方网站](https://facebook.github.io/react/))
+    # html:格式相对固定
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <!-- 用于屏幕适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 用于禁用缓存，在发布版中需要注释掉 -->
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+
+	<title>hello react</title>
+    <!-- 引入react相关的js模块 -->
+	<script src="build/react.min.js"></script>
+	<script src="build/react-dom.min.js"></script>
+	<script src="build/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div id="example"></div>
+	<script src="lib/main.js"></script>
+</body>
+</html>
+```
+    # jsx
+
+
+
 ##React学习路线
     
     1.关于React的学习，首先看视频，7节视频。1.5~2倍速度快速过一遍
