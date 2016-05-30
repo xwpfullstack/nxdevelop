@@ -126,4 +126,74 @@ genymotion镜像（android）需要虚拟机
 	将run-android生成的apk复制出来安装到天天模拟器中
 	安装完成后设置IP和端口即可
 	apk所在目录: 项目目录/android/app/build/outputs/apk/app-debug.apk
+	
+	
+## Android真机调试
+
+
+
+1.识别手机,lsusb查看设备编号,"ID 12d1:1077 Huawei"
+
+     xingwenpeng@xingwenpeng-T420:~/workspace/reactnative/react-native-android-tablayout/example$ lsusb
+     Bus 002 Device 014: ID 12d1:1077 Huawei Technologies Co., Ltd. 
+     Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+     Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+     Bus 001 Device 005: ID 04f2:b221 Chicony Electronics Co., Ltd integrated camera
+     Bus 001 Device 004: ID 0a5c:217f Broadcom Corp. BCM2045B (BDC-2.1)
+     Bus 001 Device 003: ID 147e:2016 Upek Biometric Touchchip/Touchstrip Fingerprint Sensor
+     Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+     Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+2.设置adb识别设备属性
+
+     sudo vi /etc/udev/rules.d/51-android.rules
+
+添加下面语句，标示出设备代号
+
+     SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="1073",  MODE="0777"
+
+3.设置端口代理
+
+     adb reverse tcp:8081 tcp:8081
+
+4.启动js传输监控
+
+     react-native start
+
+5.安装app
+    
+     react-native run-android
+
+### 备注
+
+如果你手机有360，安装好app后，白屏，需要去360里开启这个应用的一些权限；华为x2手机安装失败，目前解决方案是
+
+     /home/xingwenpeng/workspace/reactnative/react-native-android-tablayout/example/android/app/build/outputs/apk
+
+    目录下拷贝app-debug.apk到手机上，然后再安装，同步下载js。
+
+    adb install android/app/build/outputs/apk/app-debug.apk
+
+
+## Android发布apk
+
+基本上可以参照官方教程里的例子做。有一处路径不一致的地方需要注意。
+
+设置gradle变量
+     把my-release-key.keystore文件放到你工程中的android/app文件夹下。
+     编辑project/android/gradle.properties，添加如下的代码（注意官网给出的路径不对）
+
+     MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
+     MYAPP_RELEASE_KEY_ALIAS=my-key-alias
+     MYAPP_RELEASE_STORE_PASSWORD=*****
+     MYAPP_RELEASE_KEY_PASSWORD=*****
+
+参照官网翻译帖子。
+
+     http://reactnative.cn/docs/signed-apk-android.html#content
+     
+
+
+
+
 
