@@ -74,7 +74,7 @@
 
 ##React学习路线
     
-    1.关于React的学习，首先看视频，7节视频。1.5~2倍速度快速过一遍
+    1.关于React的学习，首先看视频（找鹏哥要视频），7节视频。1.5~2倍速度快速过一遍
     然后根这个中文网，快速理解一下。
     http://reactjs.cn/react/docs/getting-started.html
     
