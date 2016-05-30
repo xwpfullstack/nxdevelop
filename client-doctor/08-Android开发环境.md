@@ -54,6 +54,18 @@ ubuntu14.04安装react-native开发环境
 	make
 	sudo make install
 
+备注：ubuntu下面默认情况下这三个值都很小，react-native start时过一会就自动挂掉了，因为一个react-native下的文件都2万多个了，但默认情况下inotify只能监控8192个文件，所以挂掉了，需要调大系统的默认值
+
+    sudo vi /etc/sysctl.conf
+
+在末尾添加下面三行配置，然后重启
+
+    fs.inotify.max_user_watches=999999
+    fs.inotify.max_user_instances=999999
+    fs.inotify.max_user_events=1638400
+
+
+
 ## 安装react-native
 
 	npm config set registry https://registry.npm.taobao.org
