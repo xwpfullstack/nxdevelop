@@ -56,7 +56,21 @@
 ```
     # jsx
 
+## react学习网站
+中文react： http://reactjs.cn/react/docs/getting-started.html
 
+
+## 实例网站
+
+三联书社：  http://daren.slaclinic.com/
+
+## 讲react的好贴
+
+    父子组件通信：http://www.tuicool.com/articles/AzQzEbq
+    todo例子：http://www.reqianduan.com/2297.html
+    mixin透彻分析：http://segmentfault.com/a/1190000002704788
+    
+    
 
 ##React学习路线
     
