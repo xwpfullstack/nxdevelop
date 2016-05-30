@@ -1,0 +1,59 @@
+## react
+React是Facebook开源的JavaScript库，用于构建UI。你可以在React里传递多种类型的参数，如声明代码，帮助你渲染出UI、也可以是静态的HTML DOM元素、也可以传递动态变量、甚至是可交互的应用组件.
+
++ 声明式设计：React采用声明范式，你可以轻松描述你的应用。
++ 高效：Reeact通过对DOM的模拟表现，最大限度地较少与DOM的交互。
++ 灵活：React可以与你所知道的库或框架很好地工作。
+
+## browserify 
+
+Browserify 可以让你使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码，通过预编译让前端 Javascript 可以直接使用 Node NPM 安装的一些库。browserify main.js > bundle.js 编译好的 js可以直接拿到浏览器使用`<script src="bundle.js"></script>`
+
+
+    http://baike.baidu.com/link?url=Qn0enll-V_KUrfBOLWDxQwUhMocbTVW53bCcLKOeRkBzazb3u_AmBOYDHRuLuVzvRYwR5l5RiLLLkgVb8wlHNa 
+
+## webpack 
+Webpack看起来像是很棒的工具,它有许多特性(模块热切换,代码拆分,同步对异步请求等).然而,它没有像NPM和Browserify所做的那样来提升代码重用.它鼓励用"完全新的方式"来编写模块,同时常常需要人工维护配置文件.这是一个根本性的退步:它可能在npm中产生更进一步的碎片化,或者可能阻碍新代码发布到npm中去 
+
+    http://www.oschina.net/translate/browserify-vs-webpack 
+
+## browserify和webpack对比 
+Webpack 仍然还只是一个年轻的工具; 真心希望这些问题能够得到解决，如此我们就不用浪费掉到目前为止我们在npm/browerify上所作出的非凡努力. 与此同时，我将继续坚守 browserify 
+
+## babel和browserify关系 
+Babel将ES6代码编译为大多数浏览器（包括IE9）支持的ES5代码。Browserify可以让我们遵循CommonJS规范书写代码，然后经过包装在浏览器中使用。 
+
+## commonJS 
+CommonJS API定义很多普通应用程序（主要指非浏览器的应用）使用的API，从而填补了这个空白。它的终极目标是提供一个类似Python，Ruby和Java标 准库。这样的话，开发者可以使用CommonJS API编写应用程序，然后这些应用可以运行在不同的JavaScript解释器和不同的主机环境中 。CommonJS是一种规范，NodeJS是这种规范的实现。 
+
+## Grunt 
+一句话：自动化。对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你在 Gruntfile 文件正确配置好了任务，任务运行器就会自动帮你或你的小组完成大部分无聊的工作。 
+  
+    http://www.cnblogs.com/yexiaochai/p/3603389.html 
+
+## ECMA-262标准js版本 
+ECMAScript 1 1997年06月 首版 ECMAScript 2 1998年06月 格式修正，以使得其形式与ISO/IEC16262国际标准一致 ECMAScript 3 1999年12月 强大的正则表达式，更好的文字链处理，新的控制指令，异常处理，错误定义更加明确，数输出的格式化及其它改变 ECMAScript 4 未完成...可能更明确的类的定义，命名空间等等... * 2004年6月欧洲计算机制造商协会发表了ECMA-357标准，它是ECMAScript的一个扩延，它也被称为E4X（ECMAScript for XML）。 ECMAScript 5 2009年12月发布 ECMAScript 2015 2015年6月17日发布。 
+
+JavaScript的官方名称是ECMAScript 2015，Ecma国际意在更频繁地发布包含小规模增量更新的新版本，下一版本将于2016年发布，命名为ECMAScript 2016。从现在开始，新版本将按照ECMAScript+年份的形式发布。 
+
+ES6增添了许多必要的特性，例如：模块和类，以及一些实用特性，例如Maps、Sets、Promises、生成器（Generators）等。尽管ES6做了大量的更新，但是它依旧完全向后兼容以前的版本，标准化委员会决定避免由不兼容版本语言导致的“web体验破碎”。结果是，所有老代码都可以正常运行，整个过渡也显得更为平滑，但随之而来的问题是，开发者们抱怨了多年的老问题依然存在。 
+
+## babel 
+能够实现 ES6 到 ES5 的代码转换多亏了 Babel (以前叫 6to5) 以及 Traceur 之类的项目。这些转换器 (更准确地说是源代码到源代码的编译器) 可以把你写的符合 ECMAScript 6 标准的代码完美地转换为 ECMAScript 5 标准的代码，并且可以确保良好地运行在所有主流 JavaScript 引擎中。 
+
+### es6在线转es5 
+    
+    https://babeljs.io/repl/ 
+
+## jsx语法 
+JSX语法，像是在Javascript代码里直接写XML的语法，实质上这只是一个语法糖，每一个XML标签都会被JSX转换工具转换成纯Javascript代码，React 官方推荐使用JSX， 当然你想直接使用纯Javascript代码写也是可以的，只是使用JSX，组件的结构和组件之间的关系看上去更加清晰。 
+
+你没法在JSX中使用 if-else 语句，因为 JSX 只是函数调用和对象创建的语法糖。不过你可以采用三元操作表达式 
+
+目前， 一个 component 的 render，只能返回一个节点。如果你需要返回一堆 div ， 那你必须将你的组件用 一个div 或 span 或任何其他的组件包裹。 
+
+## xss攻击 
+xss表示Cross Site Scripting(跨站脚本攻击)，它与SQL注入攻击类似，SQL注入攻击中以SQL语句作为用户输入，从而达到查询/修改/删除数据的目的，而在xss攻击中，通过插入恶意脚本，实现对用户游览器的控制。 
+
+    http://www.cnblogs.com/bangerlee/archive/2013/04/06/3002142.html 
+
