@@ -50,4 +50,11 @@ passwd:问jack
 ipad暂时不用上传
 
 
+### 发布app
+
+打开itunes connect
+
+https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1095995919/ios/versioninfo
+
+
 
